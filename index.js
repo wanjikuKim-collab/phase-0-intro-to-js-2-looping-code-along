@@ -14,5 +14,26 @@ function wrapGifts(gifts){
     return gifts;
 }
 
+function writeCards(names, eventName){
+    //creates an empty array
+    let newArray = [];   
 
+    for(let index=0; index<names.length;index++){
+    //displays the message 
+    let message = `Thank you, ${names[index]}, for the wonderful ${eventName} gift!` 
+    newArray.push(message);
       
+    }
+    return newArray// returns the value of the array to the world
+  }
+  //function call with assigned arguments
+  writeCards(["Guadalupe", "Ollie", "Aki"], "surprise")
+      
+function countDown(num){
+    let i = 10
+    while(i>=0){
+        console.log(i--)
+    }
+};
+
+countDown(10)
